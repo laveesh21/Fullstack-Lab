@@ -1,9 +1,0 @@
-This is a mordern looking LogIn page using HTML and CSS. (This project is still under development)
-
-It consist of 3 images(img00.jpg, img01.jpg, img02.jpg) names, img02 is selected by default
-
-To change image: 
- -> styles.css >> .container >> background: url(img02.jpg) no-repeat;
- -> Remove img02.jpg inside url and write your custom image name 
-
-(Note: Image should be present within the same folder and should have same name written in url)
