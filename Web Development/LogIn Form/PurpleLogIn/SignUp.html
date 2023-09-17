@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LogInStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign up</h1>
+        <form action="">
+            <div class="form">
+                <label for="username">Username:</label>
+                <input type="text" id="usernameInput" name="Username" required>
+            </div>
+            <div class="form">
+                <label for="">Email ID:</label>
+                <input type="text" id="emailInput" name="Email" required>    
+            </div>
+
+            <div class="city">
+                <label for="city">Select City:</label>
+               <select name="city" id="city">
+                    <option value="roorkee">Roorkee</option>
+                    <option value="meerut">Meerut</option>
+                    <option value="srinagar">Srinagar</option>
+                    <option value="ambala">Ambala</option>
+                </select>
+            </div>
+
+            <div class="gender">
+                <label for="gender">Gender:</label>
+                    <input type="radio" name="male" >Male
+                    <input type="radio" name="male" >Female
+                    <input type="radio" name="male" >Others
+            </div>
+
+            <div class="pass">
+                <label for="password">Password:</label>
+                <input type="password" id="passwordInput" name="Password" required>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="agrement" name="agrement">I agree to the tems and condition. 
+            </div>
+
+            <button class="btn" type="submit">
+                Sign Up
+            </button>
+            
+        </form>
+    </div>
+
+    <script src="LogInScript.js"></script>
+</body>
+</html>

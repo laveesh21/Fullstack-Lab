@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="image1.jpg" onmouseover="func(event)" onmouseout="func(event)" height=200 width=200>
+
+<div style="height:200px;width:200px; border:2px cadetblue solid" onmouseover="func(event)" onmouseout="func(event)"></div>
+
+<p id="demo"></p>
+
+<script>
+function func(event) { 
+  var x = event.target;
+  document.getElementById("demo").innerHTML = event.type+ " triggered on " + x.tagName + " element";
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.fontSize = "50px";
+}
+</script>
+
+</body>
+</html>

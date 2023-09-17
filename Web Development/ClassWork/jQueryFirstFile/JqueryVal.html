@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <script src="code.jquery.com_jquery-3.7.1.min.js"></script> 
+    <style>
+        *{
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <input type="text" id="txt">
+    <input type="submit" id="set" value="set value">
+    <input type="submit" id="clear" value="clear value">
+    <input type="submit" id="get" value="get value">
+
+
+
+    <script type="text/javascript">
+        $("#set").click(
+            ()=>{
+                $("#txt").val("Hello World")
+                $("#txt").css("color", "red")
+                $("#txt").css("font-size", "30px")
+            }
+        )
+
+        $("#clear").click(
+            ()=>{
+                $("#txt").val("")
+            }
+        )
+
+        $("#get").click(
+            ()=>{
+                alert($("#txt").val("Hello"));
+            }
+        )
+    </script>
+
+
+</body>
+</html>
